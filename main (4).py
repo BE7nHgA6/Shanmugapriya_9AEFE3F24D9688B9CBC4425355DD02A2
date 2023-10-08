@@ -5,13 +5,11 @@ class Student:
   self.cgpa= cgpa
 def sort_students(student_list):
   # sort the list of students in descending order of CGPA
- sorted_students=sorted(student_list                        ,key=lambda                student:student.cgpa,
+ sorted_students=sorted(student_list,key=lambda student:student.cgpa,
                       reverse=True)
                     
   #syntax _ lambda arg:exp
  return sorted_students
-
-
 #Example usage:
 students = [
           Student("Hari", "A123", 7.8),
