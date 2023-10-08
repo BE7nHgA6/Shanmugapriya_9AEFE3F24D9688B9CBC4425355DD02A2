@@ -10,7 +10,7 @@ class BankAccount:
   else:
     print("Invalid deposit amount.Please deposit a positive amount.")
  def withdraw(self, amount):
-  if amount > 0 and amount <=            self.__account_balance:
+  if amount > 0 and amount <= self.__account_balance:
      self.__account_balance-=amount
      print("Withdraw ₹{}.New balance: ₹{}".format
 (amount,self.__account_balance))
